@@ -28,7 +28,7 @@ namespace kursachOOP
             }
             set
             {
-
+                this.Height = value;
             }
         }
         public double Width
@@ -39,7 +39,7 @@ namespace kursachOOP
             }
             set
             {
-
+                this.Width = value;
             }
         }
         public int X
@@ -50,7 +50,7 @@ namespace kursachOOP
             } 
             set
             {
-
+                this.X = value;
             }
         }
         public int Y
@@ -61,7 +61,7 @@ namespace kursachOOP
             }
             set
             {
-
+                this.Y = value;
             }
         }
 
@@ -105,7 +105,7 @@ namespace kursachOOP
             }
             set
             {
-
+                this.Stvor = value;
             }
         }
         public Windoww(double length, double height, double width, int x, int y, string materialw, int stvor) : base (length, height, width, x, y)
@@ -124,7 +124,7 @@ namespace kursachOOP
             }
             set
             {
-
+                this.TypeDoor = value is string ? value : null;
             }
         }
 
@@ -136,7 +136,7 @@ namespace kursachOOP
             }
             set
             {
-
+                this.Materiald = value is string ? value : null;
             }
         }
         public Door(double length, double height, double width, int x, int y, string typedoor, string materiald) : base (length, height, width, x, y)
@@ -156,7 +156,7 @@ namespace kursachOOP
             }
             set
             {
-
+                this.TypeBalc = value is string ? value : null;
             }
         }
         // балкон или лоджиа
@@ -175,7 +175,7 @@ namespace kursachOOP
             }
             set
             {
-
+                this.Purpose = value is string ? value : null;
             }
         }
         public string Typeoffin
@@ -186,7 +186,7 @@ namespace kursachOOP
             }
             set
             {
-
+                this.Typeoffin = value is string ? value : null;
             }
         }
         public Room(double length, double height, double width, int x, int y, string purpose, string typeoffin) : base(length, height, width, x, y)
@@ -205,7 +205,7 @@ namespace kursachOOP
             }
             set
             {
-
+                this.NextRoom = value is string ? value : null;
             }
         }
         public EntRoom(double length, double height, double width, int x, int y, string purpose, string typeoffin, string nextroom) : base(length, height, width, x, y, purpose, typeoffin)
