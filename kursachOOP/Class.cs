@@ -17,7 +17,7 @@ namespace kursachOOP
             }
             set
             {
-
+                this.Length = value;
             }
         }
         public double Height
@@ -94,7 +94,7 @@ namespace kursachOOP
             }
             set
             {
-
+                this.Materialw = value is string ? value : null;
             }
         }
         public int Stvor
