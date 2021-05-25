@@ -47,7 +47,7 @@ namespace kursachOOP
             get
             {
                 return X;
-            }
+            } 
             set
             {
 
