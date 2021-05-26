@@ -8,7 +8,11 @@ namespace kursachOOP
 {
     public class ElementBuild
     {
-        string Name;
+        public string Name
+        {
+            get { return Name; }
+            set { this.Name = value is string ? value : null; }
+        }
         public double Length
         {
             get
@@ -65,8 +69,9 @@ namespace kursachOOP
             }
         }
 
-        public ElementBuild(double length, double height, double width, int x, int y)
+        public ElementBuild(string name, double length, double height, double width, int x, int y)
         {
+            this.Name = name;
             this.Length = length;
             this.Height = height;
             this.Width = width;

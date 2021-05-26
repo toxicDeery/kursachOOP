@@ -8,7 +8,7 @@ namespace kursachOOP
 {
     public class ClRoom : Room
     {
-        public ClRoom(double length, double height, double width, int x, int y, string purpose, string typeoffin) : base(length, height, width, x, y, purpose, typeoffin)
+        public ClRoom(string name, double length, double height, double width, int x, int y, string purpose, string typeoffin) : base(name, length, height, width, x, y, purpose, typeoffin)
         {
 
         }

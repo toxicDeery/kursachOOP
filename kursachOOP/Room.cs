@@ -30,7 +30,7 @@ namespace kursachOOP
                 this.Typeoffin = value is string ? value : null;
             }
         }
-        public Room(double length, double height, double width, int x, int y, string purpose, string typeoffin) : base(length, height, width, x, y)
+        public Room(string name, double length, double height, double width, int x, int y, string purpose, string typeoffin) : base(name, length, height, width, x, y)
         {
             this.Purpose = purpose;
             this.Typeoffin = typeoffin;

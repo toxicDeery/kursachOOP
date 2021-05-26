@@ -11,7 +11,7 @@ namespace kursachOOP
         Windoww window;
         List<Door> sDoor = new List<Door>();
 
-        public Placement(double length, double height, double width, int x, int y) : base(length, height, width, x, y)
+        public Placement(string name, double length, double height, double width, int x, int y) : base(name, length, height, width, x, y)
         {
 
         }

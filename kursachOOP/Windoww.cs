@@ -30,7 +30,7 @@ namespace kursachOOP
                 this.Stvor = value;
             }
         }
-        public Windoww(double length, double height, double width, int x, int y, string materialw, int stvor) : base(length, height, width, x, y)
+        public Windoww(string name, double length, double height, double width, int x, int y, string materialw, int stvor) : base(name, length, height, width, x, y)
         {
             this.Materialw = materialw;
             this.Stvor = stvor;
