@@ -32,8 +32,8 @@ namespace kursachOOP
         }
         public Room(double length, double height, double width, int x, int y, string purpose, string typeoffin) : base(length, height, width, x, y)
         {
-            Purpose = purpose;
-            Typeoffin = typeoffin;
+            this.Purpose = purpose;
+            this.Typeoffin = typeoffin;
         }
     }
 }

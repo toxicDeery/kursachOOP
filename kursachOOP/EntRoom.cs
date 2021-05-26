@@ -21,7 +21,7 @@ namespace kursachOOP
         }
         public EntRoom(double length, double height, double width, int x, int y, string purpose, string typeoffin, string nextroom) : base(length, height, width, x, y, purpose, typeoffin)
         {
-            NextRoom = nextroom;
+            this.NextRoom = nextroom;
         }
     }
 }

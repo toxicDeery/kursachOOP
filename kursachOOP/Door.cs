@@ -33,8 +33,8 @@ namespace kursachOOP
         }
         public Door(double length, double height, double width, int x, int y, string typedoor, string materiald) : base(length, height, width, x, y)
         {
-            TypeDoor = typedoor;
-            Materiald = materiald;
+            this.TypeDoor = typedoor;
+            this.Materiald = materiald;
         }
     }
 }

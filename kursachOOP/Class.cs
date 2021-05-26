@@ -67,11 +67,11 @@ namespace kursachOOP
 
         public ElementBuild(double length, double height, double width, int x, int y)
         {
-            Length = length;
-            Height = height;
-            Width = width;
-            X = x;
-            Y = y;
+            this.Length = length;
+            this.Height = height;
+            this.Width = width;
+            this.X = x;
+            this.Y = y;
         }
     }
  
