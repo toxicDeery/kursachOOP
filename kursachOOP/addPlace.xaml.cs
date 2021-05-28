@@ -10,24 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 namespace kursachOOP
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для addPlace.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class addPlace : Window
     {
-        public MainWindow()
+        public addPlace()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Window1 a = new Window1();
-            a.Show();
         }
     }
 }

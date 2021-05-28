@@ -5,20 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:kursachOOP"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="1200">
     <Grid>
-        <TabControl HorizontalAlignment="Left" Height="410" Margin="10,0,0,0" VerticalAlignment="Top" Width="513" RenderTransformOrigin="0.898,0.5" SelectionChanged="TabControl_SelectionChanged">
-            <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5" Margin="0,0,4.2,-89.2" Height="382" VerticalAlignment="Top"/>
-            </TabItem>
-            <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5"/>
-            </TabItem>
-        </TabControl>
-        <Button Content="Button" HorizontalAlignment="Left" Height="40" Margin="550,80,0,0" VerticalAlignment="Top" Width="112"/>
-        <ComboBox HorizontalAlignment="Left" Height="31" Margin="550,10,0,0" VerticalAlignment="Top" Width="214">
-
-        </ComboBox>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="143*"/>
+            <ColumnDefinition Width="453*"/>
+        </Grid.ColumnDefinitions>
+        <Button Content="Button" HorizontalAlignment="Left" Height="42" Margin="679,74,0,0" VerticalAlignment="Top" Width="175" Grid.Column="1" Click="Button_Click"/>
+        <Label Content="Информация о элементах" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="204" FontSize="16"/>
+        <DataGrid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="509" Margin="10,45,0,0" VerticalAlignment="Top" Width="894"/>
 
     </Grid>
 </Window>
