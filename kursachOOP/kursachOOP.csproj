@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="Balcony.cs" />
     <Compile Include="ClRoom.cs" />
+    <Compile Include="DB.cs" />
     <Compile Include="Door.cs" />
     <Compile Include="EntRoom.cs" />
     <Compile Include="Room.cs" />
@@ -69,7 +70,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Class.cs" />
+    <Compile Include="ElementBuild.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
