@@ -14,7 +14,7 @@
             <ComboBoxItem Content="Окно"/>
         </ComboBox>
         <Button Content="Button" HorizontalAlignment="Left" Margin="29,112,0,0" VerticalAlignment="Top" Width="130" Height="49" Click="Button_Click"/>
-        <StackPanel x:Name="pomeshStackPanel" HorizontalAlignment="Right" Height="270"  VerticalAlignment="Center" Width="210">
+        <StackPanel x:Name="pomeshStackPanel" HorizontalAlignment="Right" Height="270"  VerticalAlignment="Center" Width="210" Visibility="Hidden">
             <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
             <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
             <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
@@ -24,7 +24,7 @@
             <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
             <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Center" Height="278"  VerticalAlignment="Center" Width="60">
+        <StackPanel x:Name="pomeshLabel" HorizontalAlignment="Center" Height="278"  VerticalAlignment="Center" Width="60" Visibility="Hidden">
             <Label Content="Имя" HorizontalAlignment ="Right"/>
             <Label Content="Длина" HorizontalAlignment ="Right"/>
             <Label Content="Ширина" HorizontalAlignment ="Right"/>
@@ -34,7 +34,38 @@
             <Label Content="Окна" HorizontalAlignment ="Right"/>
             <Label Content="Двери" HorizontalAlignment ="Right"/>
         </StackPanel>
+        <StackPanel x:Name="doorStackPanel" HorizontalAlignment="Right" Height="270"  VerticalAlignment="Center" Width="210" Visibility="Hidden">
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
+            
+        </StackPanel>
+        <StackPanel x:Name="doorLabel" HorizontalAlignment="Center" Height="278"  VerticalAlignment="Center" Width="60" Visibility="Hidden">
+            <Label Content="Имя" HorizontalAlignment ="Right"/>
+            <Label Content="Длина" HorizontalAlignment ="Right"/>
+            <Label Content="Ширина" HorizontalAlignment ="Right"/>
+            <Label Content="Высота" HorizontalAlignment ="Right"/>
+            <Label Content="X" HorizontalAlignment ="Right"/>
+            <Label Content="Y" HorizontalAlignment ="Right"/>
+            
+        </StackPanel>
+        <StackPanel x:Name="windowStackPanel" HorizontalAlignment="Right" Height="270"  VerticalAlignment="Center" Width="210" Visibility="Hidden">
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
 
+        </StackPanel>
+        <StackPanel x:Name="windowLabel" HorizontalAlignment="Center" Height="278"  VerticalAlignment="Center" Width="60" Visibility="Hidden">
+            <Label Content="Имя" HorizontalAlignment ="Right"/>
+            <Label Content="Длина" HorizontalAlignment ="Right"/>
+            <Label Content="Ширина" HorizontalAlignment ="Right"/>
+            <Label Content="Высота" HorizontalAlignment ="Right"/>
+            <Label Content="X" HorizontalAlignment ="Right"/>
+            <Label Content="Y" HorizontalAlignment ="Right"/>
+
+        </StackPanel>
 
 
     </Grid>

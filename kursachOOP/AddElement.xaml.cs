@@ -22,6 +22,12 @@ namespace kursachOOP
         public Window1()
         {
             InitializeComponent();
+            pomeshLabel.Visibility = Visibility.Hidden;
+            pomeshStackPanel.Visibility = Visibility.Hidden;
+            doorStackPanel.Visibility = Visibility.Hidden;
+            doorLabel.Visibility = Visibility.Hidden;
+            windowStackPanel.Visibility = Visibility.Hidden;
+            windowLabel.Visibility = Visibility.Hidden;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -31,19 +37,28 @@ namespace kursachOOP
 
         private void TypeEl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            pomeshLabel.Visibility = Visibility.Hidden;
+            pomeshStackPanel.Visibility = Visibility.Hidden;
+            doorStackPanel.Visibility = Visibility.Hidden;
+            doorLabel.Visibility = Visibility.Hidden;
+            windowStackPanel.Visibility = Visibility.Hidden;
+            windowLabel.Visibility = Visibility.Hidden;
             if (TypeEl.SelectedIndex == 0)
             {
+                pomeshLabel.Visibility = Visibility.Visible;
                 pomeshStackPanel.Visibility = Visibility.Visible;
             }
 
             if (TypeEl.SelectedIndex == 1)
             {
-
+                doorStackPanel.Visibility = Visibility.Visible;
+                doorLabel.Visibility = Visibility.Visible;
             }
 
             if (TypeEl.SelectedIndex == 2)
             {
-
+                windowStackPanel.Visibility = Visibility.Visible;
+                windowLabel.Visibility = Visibility.Visible;
             }
 
         }
