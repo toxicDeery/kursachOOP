@@ -106,7 +106,7 @@
             <Label Content="Y" HorizontalAlignment ="Right"/>
             <Label Content="Тип балкона" HorizontalAlignment ="Right"/>
         </StackPanel>
-        <StackPanel x:Name="roomStackPanel" HorizontalAlignment="Right" Height="270"  VerticalAlignment="Center" Width="210" Visibility="Visible">
+        <StackPanel x:Name="roomStackPanel" HorizontalAlignment="Right" Height="270"  VerticalAlignment="Center" Width="210" Visibility="Hidden">
             <TextBox x:Name="TextR1" Height="27" TextWrapping="Wrap" Text="TextBox"/>
             <TextBox x:Name="TextR2" Height="25" TextWrapping="Wrap" Text="TextBox"/>
             <TextBox x:Name="TextR3" Height="25" TextWrapping="Wrap" Text="TextBox"/>
@@ -118,7 +118,7 @@
             <TextBox x:Name="TextR9" Height="27" TextWrapping="Wrap" Text="TextBox"/>
 
         </StackPanel>
-        <StackPanel x:Name="roomLabel" HorizontalAlignment="Center" Height="278"  VerticalAlignment="Center" Width="112" Visibility="Visible" Margin="164,46,216,45">
+        <StackPanel x:Name="roomLabel" HorizontalAlignment="Center" Height="278"  VerticalAlignment="Center" Width="112" Visibility="Hidden" Margin="164,46,216,45">
             <Label Content="Номер элемента" HorizontalAlignment ="Right"/>
             <Label Content="Имя" HorizontalAlignment ="Right"/>
             <Label Content="Длина" HorizontalAlignment ="Right"/>

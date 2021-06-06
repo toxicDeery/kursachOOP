@@ -37,6 +37,10 @@ namespace kursachOOP
         AddClass add = new AddClass();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            if (TypeEl.SelectedIndex == 0)
+            {
+                //add.AddPom();
+            }
             if (TypeEl.SelectedIndex == 1)
             {
                 add.AddDoor(id, TextD1.Text, TextD2.Text, TextD3.Text, TextD4.Text, TextD5.Text, TextD6.Text, TextD7.Text, TextD8.Text, TextD9.Text);

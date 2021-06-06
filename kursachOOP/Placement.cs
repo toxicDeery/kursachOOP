@@ -31,7 +31,7 @@ namespace kursachOOP
 
         public Placement(string number, string name, string length, string height, string width, string x, string y) : base(number, name, length, height, width, x, y)
         {
-
+            
         }
     }
 }

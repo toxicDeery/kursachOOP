@@ -40,5 +40,11 @@ namespace kursachOOP
             Wind.ItemsSource = DB.windowws;
             Wind.Items.Refresh();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Edit ed = new Edit();
+            ed.Show();
+        }
     }
 }

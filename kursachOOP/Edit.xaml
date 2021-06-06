@@ -1,0 +1,31 @@
+﻿<Window x:Class="kursachOOP.Edit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kursachOOP"
+        mc:Ignorable="d"
+        Title="Edit" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="ComboEl" HorizontalAlignment="Left" Margin="267,45,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboEl_SelectionChanged">
+            <ComboBoxItem Content="Помещение"/>
+            <ComboBoxItem Content="Дверь"/>
+            <ComboBoxItem Content="Окно"/>
+            <ComboBoxItem Content="Балкон"/>
+            <ComboBoxItem Content="Комната"/>
+        </ComboBox>
+
+        <ComboBox x:Name="ComboId" HorizontalAlignment="Left" Margin="267,82,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="outE" Content="Button" HorizontalAlignment="Left" Margin="611,45,0,0" VerticalAlignment="Top" Width="75" Click="outE_Click"/>
+        <TextBox x:Name="Text1" HorizontalAlignment="Left" Height="23" Margin="103,146,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Text2" HorizontalAlignment="Left" Height="23" Margin="103,174,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Text3" HorizontalAlignment="Left" Height="23" Margin="103,202,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Text4" HorizontalAlignment="Left" Height="23" Margin="103,230,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Text5" HorizontalAlignment="Left" Height="23" Margin="103,258,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Text6" HorizontalAlignment="Left" Height="23" Margin="103,286,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Text7" HorizontalAlignment="Left" Height="23" Margin="103,309,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Text8" HorizontalAlignment="Left" Height="23" Margin="103,337,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Text9" HorizontalAlignment="Left" Height="23" Margin="103,365,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

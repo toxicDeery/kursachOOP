@@ -62,6 +62,9 @@
     <Compile Include="Balcony.cs" />
     <Compile Include="ClRoom.cs" />
     <Compile Include="Door.cs" />
+    <Compile Include="Edit.xaml.cs">
+      <DependentUpon>Edit.xaml</DependentUpon>
+    </Compile>
     <Compile Include="EntRoom.cs" />
     <Compile Include="Room.cs" />
     <Compile Include="AddElement.xaml.cs">
@@ -69,6 +72,10 @@
     </Compile>
     <Compile Include="Windoww.cs" />
     <Page Include="addPlace.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Edit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

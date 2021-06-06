@@ -16,6 +16,13 @@ namespace kursachOOP
     }
     public class AddClass
     {
+        public void AddPom(string id, string num, string Name, string length, string width, string height, string x, string y, string test, string test1)
+        {
+            if (id == "0")
+            {
+                DB.place.Add(new Placement(num, Name, length, height, width, x, y));
+            }
+        }
         public void AddDoor(string id, string num, string Name, string length, string width, string height, string x, string y, string test, string test1)
         {
             if (id == "1")

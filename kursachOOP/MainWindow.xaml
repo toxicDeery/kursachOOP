@@ -11,7 +11,7 @@
             <ColumnDefinition Width="143*"/>
             <ColumnDefinition Width="453*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="Button" HorizontalAlignment="Left" Height="42" Margin="679,74,0,0" VerticalAlignment="Top" Width="175" Grid.Column="1" Click="Button_Click"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Height="42" Margin="679,74,0,0" VerticalAlignment="Top" Width="175" Grid.Column="1" Click="Button_Click"/>
         <Label Content="Информация о элементах" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="204" FontSize="16"/>
         <TabControl HorizontalAlignment="Left" Height="509" Margin="10,50,0,0" VerticalAlignment="Top" Width="933" Grid.ColumnSpan="2">
             <TabItem x:Name="Balcony" Header="Балкон">
@@ -34,7 +34,9 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <Button Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="759,482,0,0" VerticalAlignment="Top" Width="90" Height="44" Click="Button_Click_1"/>
+        <Button Content="Обновить" Grid.Column="1" HorizontalAlignment="Left" Margin="759,482,0,0" VerticalAlignment="Top" Width="90" Height="44" Click="Button_Click_1"/>
+        <Button Content="Редактировать" Grid.Column="1" HorizontalAlignment="Left" Margin="679,130,0,0" VerticalAlignment="Top" Width="175" Height="42" Click="Button_Click_2"/>
+        <Button Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="679,188,0,0" VerticalAlignment="Top" Width="175" Height="42"/>
 
     </Grid>
 </Window>
