@@ -33,10 +33,13 @@ namespace kursachOOP
             roomStackPanel.Visibility = Visibility.Hidden;
             roomLabel.Visibility = Visibility.Hidden;
         }
-
+        string id = "";
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-           
+            if (TypeEl.SelectedIndex == 0)
+            {
+
+            }
         }
 
         private void TypeEl_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -53,28 +56,33 @@ namespace kursachOOP
             roomLabel.Visibility = Visibility.Hidden;
             if (TypeEl.SelectedIndex == 0)
             {
+                id = "0";
                 pomeshLabel.Visibility = Visibility.Visible;
                 pomeshStackPanel.Visibility = Visibility.Visible;
             }
 
             if (TypeEl.SelectedIndex == 1)
             {
+                id = "1";
                 doorStackPanel.Visibility = Visibility.Visible;
                 doorLabel.Visibility = Visibility.Visible;
             }
 
             if (TypeEl.SelectedIndex == 2)
             {
+                id = "2";
                 windowStackPanel.Visibility = Visibility.Visible;
                 windowLabel.Visibility = Visibility.Visible;
             }
             if(TypeEl.SelectedIndex == 3)
             {
+                id = "3";
                 balconyStackPanel.Visibility = Visibility.Visible;
                 balconyLabel.Visibility = Visibility.Visible;
             }
             if (TypeEl.SelectedIndex == 4)
             {
+                id = "4";
                 roomStackPanel.Visibility = Visibility.Visible;
                 roomLabel.Visibility = Visibility.Visible;
             }
