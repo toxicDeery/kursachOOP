@@ -13,7 +13,21 @@
         </Grid.ColumnDefinitions>
         <Button Content="Button" HorizontalAlignment="Left" Height="42" Margin="679,74,0,0" VerticalAlignment="Top" Width="175" Grid.Column="1" Click="Button_Click"/>
         <Label Content="Информация о элементах" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="35" Width="204" FontSize="16"/>
-        <DataGrid Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="509" Margin="10,45,0,0" VerticalAlignment="Top" Width="894"/>
+        <TabControl HorizontalAlignment="Left" Height="509" Margin="10,50,0,0" VerticalAlignment="Top" Width="933" Grid.ColumnSpan="2">
+            <TabItem x:Name="Balcony" Header="Балкон">
+                <Grid x:Name="BalconyAll" Background="#FFE5E5E5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0*"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name="Balcon" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="481" VerticalAlignment="Top" Width="927"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Окно">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+        <Button Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="759,482,0,0" VerticalAlignment="Top" Width="90" Height="44" Click="Button_Click_1"/>
 
     </Grid>
 </Window>

@@ -8,11 +8,12 @@ namespace kursachOOP
 {
     public class Balcony : Placement
     {
-        public string TypeBalc
+        private string TypeBalc;
+        public string thisTypeBalc
         {
             get
             {
-                return TypeBalc;
+                return this.TypeBalc;
             }
             set
             {

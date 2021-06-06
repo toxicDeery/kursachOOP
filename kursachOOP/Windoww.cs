@@ -8,29 +8,31 @@ namespace kursachOOP
 {
     public class Windoww : ElementBuild // тип окна, кол-во створок
     {
-        public string Materialw
+        private string Materialw;
+        private string Stvor;
+        public string thisMaterialw
         {
             get
             {
-                return Materialw;
+                return this.Materialw;
             }
             set
             {
                 this.Materialw = value is string ? value : null;
             }
         }
-        public int Stvor
+        public string thisStvor
         {
             get
             {
-                return Stvor;
+                return this.Stvor;
             }
             set
             {
                 this.Stvor = value;
             }
         }
-        public Windoww(string name, double length, double height, double width, int x, int y, string materialw, int stvor) : base(name, length, height, width, x, y)
+        public Windoww(string number, string name, string length, string height, string width, string x, string y, string materialw, string stvor) : base(number, name, length, height, width, x, y)
         {
             this.Materialw = materialw;
             this.Stvor = stvor;

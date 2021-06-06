@@ -8,22 +8,24 @@ namespace kursachOOP
 {
     public class Room : Placement
     {
-        public string Purpose
+        private string Purpose;
+        private string Typeoffin;
+        public string thisPurpose
         {
             get
             {
-                return Purpose;
+                return this.Purpose;
             }
             set
             {
                 this.Purpose = value is string ? value : null;
             }
         }
-        public string Typeoffin
+        public string thisTypeoffin
         {
             get
             {
-                return Typeoffin;
+                return this.Typeoffin;
             }
             set
             {

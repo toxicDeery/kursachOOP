@@ -8,11 +8,12 @@ namespace kursachOOP
 {
     public class EntRoom : Room
     {
-        public string NextRoom
+        private string NextRoom;
+        public string thisNextRoom
         {
             get
             {
-                return NextRoom;
+                return this.NextRoom;
             }
             set
             {

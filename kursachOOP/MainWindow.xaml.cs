@@ -29,5 +29,12 @@ namespace kursachOOP
             Window1 a = new Window1();
             a.Show();
         }
+
+        
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Balcon.ItemsSource = DB.balconies;
+            Balcon.Items.Refresh();
+        }
     }
 }

@@ -8,65 +8,72 @@ namespace kursachOOP
 {
     public class ElementBuild
     {
-        public string number
+        private string number;
+        private string Name;
+        private string Length;
+        private string Height;
+        private string Width;
+        private string X;
+        private string Y;
+        public string thisNumber
         {
             get { return number; }
             set { this.number = value is string ? value : null; }
         }
-        public string Name
+        public string thisName
         {
-            get { return Name; }
+            get { return this.Name; }
             set { this.Name = value is string ? value : null; }
         }
-        public string Length
+        public string thisLength
         {
             get
             {
-                return Length;
+                return this.Length;
             }
             set
             {
                 this.Length = value is string ? value : null;
             }
         }
-        public string Height
+        public string thisHeight
         {
             get
             {
-                return Height;
+                return this.Height;
             }
             set
             {
                 this.Height = value is string ? value : null;
             }
         }
-        public string Width
+        public string thisWidth
         {
             get
             {
-                return Width;
+                return this.Width;
             }
             set
             {
                 this.Width = value is string ? value : null;
             }
         }
-        public string X
+        public string thisX
         {
             get
             {
-                return X;
+                return this.X;
             } 
             set
             {
                 this.X = value is string ? value : null;
             }
         }
-        public string Y
+        public string thisY
         {
             get
             {
-                return Y;
+                return this.Y;
             }
             set
             {

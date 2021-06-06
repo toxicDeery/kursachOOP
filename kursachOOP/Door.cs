@@ -8,11 +8,13 @@ namespace kursachOOP
 {
     public class Door : ElementBuild // тип двери, материал 
     {
-        public string TypeDoor
+        private string TypeDoor;
+        private string Materiald;
+        public string thisTypeDoor
         {
             get
             {
-                return TypeDoor;
+                return this.TypeDoor;
             }
             set
             {
@@ -20,11 +22,11 @@ namespace kursachOOP
             }
         }
 
-        public string Materiald
+        public string thisMateriald
         {
             get
             {
-                return Materiald;
+                return this.Materiald;
             }
             set
             {
