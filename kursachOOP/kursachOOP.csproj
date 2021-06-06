@@ -55,12 +55,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AddClass.cs" />
     <Compile Include="addPlace.xaml.cs">
       <DependentUpon>addPlace.xaml</DependentUpon>
     </Compile>
     <Compile Include="Balcony.cs" />
     <Compile Include="ClRoom.cs" />
-    <Compile Include="DB.cs" />
     <Compile Include="Door.cs" />
     <Compile Include="EntRoom.cs" />
     <Compile Include="Room.cs" />

@@ -29,7 +29,7 @@ namespace kursachOOP
             set { this.sDoor.Add(value); }
         }
 
-        public Placement(string name, double length, double height, double width, int x, int y) : base(name, length, height, width, x, y)
+        public Placement(string number, string name, string length, string height, string width, string x, string y) : base(number, name, length, height, width, x, y)
         {
 
         }

@@ -8,12 +8,17 @@ namespace kursachOOP
 {
     public class ElementBuild
     {
+        public string number
+        {
+            get { return number; }
+            set { this.number = value is string ? value : null; }
+        }
         public string Name
         {
             get { return Name; }
             set { this.Name = value is string ? value : null; }
         }
-        public double Length
+        public string Length
         {
             get
             {
@@ -21,10 +26,10 @@ namespace kursachOOP
             }
             set
             {
-                this.Length = value;
+                this.Length = value is string ? value : null;
             }
         }
-        public double Height
+        public string Height
         {
             get
             {
@@ -32,10 +37,10 @@ namespace kursachOOP
             }
             set
             {
-                this.Height = value;
+                this.Height = value is string ? value : null;
             }
         }
-        public double Width
+        public string Width
         {
             get
             {
@@ -43,10 +48,10 @@ namespace kursachOOP
             }
             set
             {
-                this.Width = value;
+                this.Width = value is string ? value : null;
             }
         }
-        public int X
+        public string X
         {
             get
             {
@@ -54,10 +59,10 @@ namespace kursachOOP
             } 
             set
             {
-                this.X = value;
+                this.X = value is string ? value : null;
             }
         }
-        public int Y
+        public string Y
         {
             get
             {
@@ -65,12 +70,13 @@ namespace kursachOOP
             }
             set
             {
-                this.Y = value;
+                this.Y = value is string ? value : null;
             }
         }
 
-        public ElementBuild(string name, double length, double height, double width, int x, int y)
+        public ElementBuild(string number, string name, string length, string height, string width, string x, string y)
         {
+            this.number = number;
             this.Name = name;
             this.Length = length;
             this.Height = height;

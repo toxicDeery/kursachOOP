@@ -20,7 +20,7 @@ namespace kursachOOP
             }
         }
         // балкон или лоджиа
-        public Balcony(string name, double length, double height, double width, int x, int y, string typebalc) : base(name, length, height, width, x, y)
+        public Balcony(string number, string name, string length, string height, string width, string x, string y, string typebalc) : base(number, name, length, height, width, x, y)
         {
             this.TypeBalc = typebalc;
         }

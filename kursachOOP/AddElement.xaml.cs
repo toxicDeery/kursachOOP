@@ -34,11 +34,12 @@ namespace kursachOOP
             roomLabel.Visibility = Visibility.Hidden;
         }
         string id = "";
+        AddClass add = new AddClass();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (TypeEl.SelectedIndex == 0)
+            if (TypeEl.SelectedIndex == 3)
             {
-
+                add.AddEl(id, Text1.Text, Text2.Text, Text3.Text, Text4.Text, Text5.Text, Text6.Text, Text7.Text, Text8.Text);
             }
         }
 

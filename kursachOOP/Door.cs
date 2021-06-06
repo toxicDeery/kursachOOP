@@ -31,7 +31,7 @@ namespace kursachOOP
                 this.Materiald = value is string ? value : null;
             }
         }
-        public Door(string name, double length, double height, double width, int x, int y, string typedoor, string materiald) : base(name, length, height, width, x, y)
+        public Door(string number, string name, string length, string height, string width, string x, string y, string typedoor, string materiald) : base(number, name, length, height, width, x, y)
         {
             this.TypeDoor = typedoor;
             this.Materiald = materiald;
