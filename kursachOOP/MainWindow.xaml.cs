@@ -35,6 +35,8 @@ namespace kursachOOP
         {
             Balcon.ItemsSource = DB.balconies;
             Balcon.Items.Refresh();
+            Wind.ItemsSource = DB.windowws;
+            Wind.Items.Refresh();
         }
     }
 }

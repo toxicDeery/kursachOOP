@@ -24,7 +24,9 @@
                 </Grid>
             </TabItem>
             <TabItem Header="Окно">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <DataGrid x:Name="Wind" HorizontalAlignment="Left" Height="481" VerticalAlignment="Top" Width="927"/>
+                </Grid>
             </TabItem>
         </TabControl>
         <Button Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="759,482,0,0" VerticalAlignment="Top" Width="90" Height="44" Click="Button_Click_1"/>

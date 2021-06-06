@@ -22,6 +22,14 @@ namespace kursachOOP
             {
                 DB.balconies.Add(new Balcony(num, Name, length, height, width, x, y, test));
             }
+            
+        }
+        public void AddWin(string id, string num, string Name, string length, string width, string height, string x, string y, string test, string test1)
+        {
+            if (id == "2")
+            {
+                DB.windowws.Add(new Windoww(num, Name, length, height, width, x, y, test, test1));
+            }
         }
     }
 }
