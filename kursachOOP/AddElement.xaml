@@ -12,19 +12,23 @@
             <ComboBoxItem Content="Помещение"/>
             <ComboBoxItem Content="Дверь"/>
             <ComboBoxItem Content="Окно"/>
+            <ComboBoxItem Content="Балкон"/>
+            <ComboBoxItem Content="Комната"/>
         </ComboBox>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="29,112,0,0" VerticalAlignment="Top" Width="130" Height="49" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="29,112,0,0" VerticalAlignment="Top" Width="130" Height="49" Click="Button_Click" Visibility="Visible"/>
         <StackPanel x:Name="pomeshStackPanel" HorizontalAlignment="Right" Height="270"  VerticalAlignment="Center" Width="210" Visibility="Hidden">
             <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
             <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
             <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
             <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
             <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
             <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
-            <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
-            <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
+            <ComboBox/>
+            <ComboBox/>
         </StackPanel>
-        <StackPanel x:Name="pomeshLabel" HorizontalAlignment="Center" Height="278"  VerticalAlignment="Center" Width="60" Visibility="Hidden">
+        <StackPanel x:Name="pomeshLabel" HorizontalAlignment="Center" Height="278"  VerticalAlignment="Center" Width="112" Visibility="Hidden" Margin="164,46,216,45">
+            <Label Content="Номер элемента" HorizontalAlignment ="Right"/>
             <Label Content="Имя" HorizontalAlignment ="Right"/>
             <Label Content="Длина" HorizontalAlignment ="Right"/>
             <Label Content="Ширина" HorizontalAlignment ="Right"/>
@@ -36,35 +40,95 @@
         </StackPanel>
         <StackPanel x:Name="doorStackPanel" HorizontalAlignment="Right" Height="270"  VerticalAlignment="Center" Width="210" Visibility="Hidden">
             <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
             <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
             <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
             <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
-            
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
+
         </StackPanel>
-        <StackPanel x:Name="doorLabel" HorizontalAlignment="Center" Height="278"  VerticalAlignment="Center" Width="60" Visibility="Hidden">
+        <StackPanel x:Name="doorLabel" HorizontalAlignment="Center" Height="278"  VerticalAlignment="Center" Width="112" Visibility="Hidden" Margin="164,46,216,45">
+            <Label Content="Номер элемента" HorizontalAlignment ="Right"/>
             <Label Content="Имя" HorizontalAlignment ="Right"/>
             <Label Content="Длина" HorizontalAlignment ="Right"/>
             <Label Content="Ширина" HorizontalAlignment ="Right"/>
             <Label Content="Высота" HorizontalAlignment ="Right"/>
             <Label Content="X" HorizontalAlignment ="Right"/>
             <Label Content="Y" HorizontalAlignment ="Right"/>
-            
+            <Label Content="Тип двери" HorizontalAlignment ="Right"/>
+            <Label Content="Материал" HorizontalAlignment ="Right"/>
+
         </StackPanel>
         <StackPanel x:Name="windowStackPanel" HorizontalAlignment="Right" Height="270"  VerticalAlignment="Center" Width="210" Visibility="Hidden">
             <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
             <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
             <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
             <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
 
         </StackPanel>
-        <StackPanel x:Name="windowLabel" HorizontalAlignment="Center" Height="278"  VerticalAlignment="Center" Width="60" Visibility="Hidden">
+        <StackPanel x:Name="windowLabel" HorizontalAlignment="Center" Height="278"  VerticalAlignment="Center" Width="112" Visibility="Hidden" Margin="164,46,216,45">
+            <Label Content="Номер элемента" HorizontalAlignment ="Right"/>
             <Label Content="Имя" HorizontalAlignment ="Right"/>
             <Label Content="Длина" HorizontalAlignment ="Right"/>
             <Label Content="Ширина" HorizontalAlignment ="Right"/>
             <Label Content="Высота" HorizontalAlignment ="Right"/>
             <Label Content="X" HorizontalAlignment ="Right"/>
             <Label Content="Y" HorizontalAlignment ="Right"/>
+            <Label Content="Материал" HorizontalAlignment ="Right"/>
+            <Label Content="Кол-во створок" HorizontalAlignment ="Right"/>
+        </StackPanel>
+        <StackPanel x:Name="balconyStackPanel" HorizontalAlignment="Right" Height="270"  VerticalAlignment="Center" Width="210" Visibility="Hidden">
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
 
+        </StackPanel>
+        <StackPanel x:Name="balconyLabel" HorizontalAlignment="Center" Height="278"  VerticalAlignment="Center" Width="112" Visibility="Hidden" Margin="164,46,216,45">
+            <Label Content="Номер элемента" HorizontalAlignment ="Right"/>
+            <Label Content="Имя" HorizontalAlignment ="Right"/>
+            <Label Content="Длина" HorizontalAlignment ="Right"/>
+            <Label Content="Ширина" HorizontalAlignment ="Right"/>
+            <Label Content="Высота" HorizontalAlignment ="Right"/>
+            <Label Content="X" HorizontalAlignment ="Right"/>
+            <Label Content="Y" HorizontalAlignment ="Right"/>
+            <Label Content="Тип балкона" HorizontalAlignment ="Right"/>
+        </StackPanel>
+        <StackPanel x:Name="roomStackPanel" HorizontalAlignment="Right" Height="270"  VerticalAlignment="Center" Width="210" Visibility="Hidden">
+            <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="25" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="26" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="26" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
+            <TextBox Height="27" TextWrapping="Wrap" Text="TextBox"/>
+
+        </StackPanel>
+        <StackPanel x:Name="roomLabel" HorizontalAlignment="Center" Height="278"  VerticalAlignment="Center" Width="112" Visibility="Hidden" Margin="164,46,216,45">
+            <Label Content="Номер элемента" HorizontalAlignment ="Right"/>
+            <Label Content="Имя" HorizontalAlignment ="Right"/>
+            <Label Content="Длина" HorizontalAlignment ="Right"/>
+            <Label Content="Ширина" HorizontalAlignment ="Right"/>
+            <Label Content="Высота" HorizontalAlignment ="Right"/>
+            <Label Content="X" HorizontalAlignment ="Right"/>
+            <Label Content="Y" HorizontalAlignment ="Right"/>
+            <Label Content="Назначение" HorizontalAlignment ="Right"/>
+            <Label Content="Тип отделки" HorizontalAlignment ="Right"/>
+            
         </StackPanel>
 
 
