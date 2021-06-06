@@ -28,6 +28,11 @@
                     <DataGrid x:Name="Wind" HorizontalAlignment="Left" Height="481" VerticalAlignment="Top" Width="927"/>
                 </Grid>
             </TabItem>
+            <TabItem Header="Двери">
+                <Grid HorizontalAlignment="Left" Height="482" VerticalAlignment="Top" Width="928" Margin="0,0,-1,-1">
+                    <DataGrid x:Name="Doors" HorizontalAlignment="Left" Height="482" VerticalAlignment="Top" Width="928"/>
+                </Grid>
+            </TabItem>
         </TabControl>
         <Button Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="759,482,0,0" VerticalAlignment="Top" Width="90" Height="44" Click="Button_Click_1"/>
 

@@ -16,13 +16,12 @@ namespace kursachOOP
     }
     public class AddClass
     {
-        public void AddEl(string id, string num, string Name, string length, string width, string height, string x, string y, string test)
+        public void AddDoor(string id, string num, string Name, string length, string width, string height, string x, string y, string test, string test1)
         {
-            if (id == "3")
+            if (id == "1")
             {
-                DB.balconies.Add(new Balcony(num, Name, length, height, width, x, y, test));
+                DB.doors.Add(new Door(num, Name, length, height, width, x, y, test, test1));
             }
-            
         }
         public void AddWin(string id, string num, string Name, string length, string width, string height, string x, string y, string test, string test1)
         {
@@ -31,5 +30,14 @@ namespace kursachOOP
                 DB.windowws.Add(new Windoww(num, Name, length, height, width, x, y, test, test1));
             }
         }
+        public void AddEl(string id, string num, string Name, string length, string width, string height, string x, string y, string test)
+        {
+            if (id == "3")
+            {
+                DB.balconies.Add(new Balcony(num, Name, length, height, width, x, y, test));
+            }
+            
+        }
+        
     }
 }

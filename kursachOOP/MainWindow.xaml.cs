@@ -33,6 +33,8 @@ namespace kursachOOP
         
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            Doors.ItemsSource = DB.doors;
+            Doors.Items.Refresh();
             Balcon.ItemsSource = DB.balconies;
             Balcon.Items.Refresh();
             Wind.ItemsSource = DB.windowws;

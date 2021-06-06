@@ -37,14 +37,19 @@ namespace kursachOOP
         AddClass add = new AddClass();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (TypeEl.SelectedIndex == 3)
+            if (TypeEl.SelectedIndex == 1)
             {
-                add.AddEl(id, Text1.Text, Text2.Text, Text3.Text, Text4.Text, Text5.Text, Text6.Text, Text7.Text, Text8.Text);
+                add.AddDoor(id, TextD1.Text, TextD2.Text, TextD3.Text, TextD4.Text, TextD5.Text, TextD6.Text, TextD7.Text, TextD8.Text, TextD9.Text);
             }
             if (TypeEl.SelectedIndex == 2)
             {
                 add.AddWin(id, TextW1.Text, TextW2.Text, TextW3.Text, TextW4.Text, TextW5.Text, TextW6.Text, TextW7.Text, TextW8.Text, TextW9.Text);
             }
+            if (TypeEl.SelectedIndex == 3)
+            {
+                add.AddEl(id, Text1.Text, Text2.Text, Text3.Text, Text4.Text, Text5.Text, Text6.Text, Text7.Text, Text8.Text);
+            }
+            
         }
 
         private void TypeEl_SelectionChanged(object sender, SelectionChangedEventArgs e)
