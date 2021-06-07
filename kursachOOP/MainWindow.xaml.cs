@@ -23,10 +23,10 @@ namespace kursachOOP
         {
             InitializeComponent();
         }
-        Window1 a = new Window1();
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
+            Window1 a = new Window1();
             a.Show();
         }
         private void Button_Click_1(object sender, RoutedEventArgs e)
