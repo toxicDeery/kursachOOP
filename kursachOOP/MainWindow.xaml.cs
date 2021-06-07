@@ -77,7 +77,7 @@ namespace kursachOOP
         private void del_Click(object sender, RoutedEventArgs e)
         {
             Delete de = new Delete();
-            de.Show();
+            de.Show(); 
         }
     }
 }
