@@ -55,9 +55,9 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <Button Content="Обновить" Grid.Column="1" HorizontalAlignment="Left" Margin="759,482,0,0" VerticalAlignment="Top" Width="90" Height="44" Click="Button_Click_1"/>
+        <Button Content="Обновить" Grid.Column="1" HorizontalAlignment="Left" Margin="679,519,0,0" VerticalAlignment="Top" Width="175" Height="40" Click="Button_Click_1"/>
         <Button Content="Редактировать" Grid.Column="1" HorizontalAlignment="Left" Margin="679,130,0,0" VerticalAlignment="Top" Width="175" Height="42" Click="Button_Click_2"/>
-        <Button Content="Button" Grid.Column="1" HorizontalAlignment="Left" Margin="679,188,0,0" VerticalAlignment="Top" Width="175" Height="42"/>
+        <Button x:Name="del" Content="Удалить" Grid.Column="1" HorizontalAlignment="Left" Margin="679,188,0,0" VerticalAlignment="Top" Width="175" Height="42" Click="del_Click"/>
 
     </Grid>
 </Window>

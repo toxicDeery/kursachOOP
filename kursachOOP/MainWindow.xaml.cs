@@ -73,5 +73,11 @@ namespace kursachOOP
             Edit ed = new Edit();
             ed.Show();
         }
+
+        private void del_Click(object sender, RoutedEventArgs e)
+        {
+            Delete de = new Delete();
+            de.Show();
+        }
     }
 }
