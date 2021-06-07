@@ -22,86 +22,126 @@ namespace kursachOOP
         public Window1()
         {
             InitializeComponent();
-            pomeshLabel.Visibility = Visibility.Hidden;
-            pomeshStackPanel.Visibility = Visibility.Hidden;
-            doorStackPanel.Visibility = Visibility.Hidden;
-            doorLabel.Visibility = Visibility.Hidden;
-            windowStackPanel.Visibility = Visibility.Hidden;
-            windowLabel.Visibility = Visibility.Hidden;
-            balconyStackPanel.Visibility = Visibility.Hidden;
-            balconyLabel.Visibility = Visibility.Hidden;
-            roomStackPanel.Visibility = Visibility.Hidden;
-            roomLabel.Visibility = Visibility.Hidden;
+            text8.Visibility = Visibility.Collapsed;
+            text9.Visibility = Visibility.Collapsed;
+            text10.Visibility = Visibility.Hidden;
+            text11.Visibility = Visibility.Collapsed;
+            text12.Visibility = Visibility.Collapsed;
+            checkRoom.Visibility = Visibility.Hidden;
+            label1.Visibility = Visibility.Collapsed;
+            label2.Visibility = Visibility.Collapsed;
+            label3.Visibility = Visibility.Collapsed;
+            label4.Visibility = Visibility.Collapsed;
+            label5.Visibility = Visibility.Hidden;
+
         }
         string id = "";
         AddClass add = new AddClass();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (TypeEl.SelectedIndex == 0)
-            {
-                //add.AddPom();
-            }
-            if (TypeEl.SelectedIndex == 1)
-            {
-                add.AddDoor(id, TextD1.Text, TextD2.Text, TextD3.Text, TextD4.Text, TextD5.Text, TextD6.Text, TextD7.Text, TextD8.Text, TextD9.Text);
-            }
-            if (TypeEl.SelectedIndex == 2)
-            {
-                add.AddWin(id, TextW1.Text, TextW2.Text, TextW3.Text, TextW4.Text, TextW5.Text, TextW6.Text, TextW7.Text, TextW8.Text, TextW9.Text);
-            }
-            if (TypeEl.SelectedIndex == 3)
-            {
-                add.AddEl(id, Text1.Text, Text2.Text, Text3.Text, Text4.Text, Text5.Text, Text6.Text, Text7.Text, Text8.Text);
-            }
-            
+                add.AddEl(id, Text1.Text, text2.Text, text3.Text, text4.Text, text5.Text, text6.Text, text7.Text, text8.Text, text9.Text, text11.Text, text12.Text, text10.Text);
         }
 
         private void TypeEl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            pomeshLabel.Visibility = Visibility.Hidden;
-            pomeshStackPanel.Visibility = Visibility.Hidden;
-            doorStackPanel.Visibility = Visibility.Hidden;
-            doorLabel.Visibility = Visibility.Hidden;
-            windowStackPanel.Visibility = Visibility.Hidden;
-            windowLabel.Visibility = Visibility.Hidden;
-            balconyStackPanel.Visibility = Visibility.Hidden;
-            balconyLabel.Visibility = Visibility.Hidden;
-            roomStackPanel.Visibility = Visibility.Hidden;
-            roomLabel.Visibility = Visibility.Hidden;
+           
+            checkRoom.Visibility = Visibility.Hidden;
+            text10.Visibility = Visibility.Hidden;
+            
             if (TypeEl.SelectedIndex == 0)
             {
                 id = "0";
-                pomeshLabel.Visibility = Visibility.Visible;
-                pomeshStackPanel.Visibility = Visibility.Visible;
+                text8.Visibility = Visibility.Visible;
+                text9.Visibility = Visibility.Visible;
+                label1.Visibility = Visibility.Visible;
+                label2.Visibility = Visibility.Visible;
+                label1.Content = "Коды дверей";
+                label2.Content = "Коды окон";
+                label3.Visibility = Visibility.Collapsed;
+                label4.Visibility = Visibility.Collapsed;
+                text11.Visibility = Visibility.Collapsed;
+                text12.Visibility = Visibility.Collapsed;
             }
 
             if (TypeEl.SelectedIndex == 1)
             {
                 id = "1";
-                doorStackPanel.Visibility = Visibility.Visible;
-                doorLabel.Visibility = Visibility.Visible;
+                text8.Visibility = Visibility.Visible;
+                text9.Visibility = Visibility.Visible;
+                label1.Visibility = Visibility.Visible;
+                label2.Visibility = Visibility.Visible;
+                label1.Content = "Тип двери";
+                label2.Content = "Материал";
             }
 
             if (TypeEl.SelectedIndex == 2)
             {
                 id = "2";
-                windowStackPanel.Visibility = Visibility.Visible;
-                windowLabel.Visibility = Visibility.Visible;
+                text8.Visibility = Visibility.Visible;
+                text9.Visibility = Visibility.Visible;
+                label1.Visibility = Visibility.Visible;
+                label2.Visibility = Visibility.Visible;
+                label1.Content = "Материал";
+                label2.Content = "Кол-во створок";
             }
             if(TypeEl.SelectedIndex == 3)
             {
                 id = "3";
-                balconyStackPanel.Visibility = Visibility.Visible;
-                balconyLabel.Visibility = Visibility.Visible;
+                text8.Visibility = Visibility.Visible;
+                label1.Visibility = Visibility.Visible;
+                label1.Content = "Тип балкона";
+                label2.Visibility = Visibility.Collapsed;
+                label3.Visibility = Visibility.Collapsed;
+                label4.Visibility = Visibility.Collapsed;
+                text9.Visibility = Visibility.Collapsed;
+                text11.Visibility = Visibility.Collapsed;
+                text12.Visibility = Visibility.Collapsed;
             }
             if (TypeEl.SelectedIndex == 4)
             {
-                id = "4";
-                roomStackPanel.Visibility = Visibility.Visible;
-                roomLabel.Visibility = Visibility.Visible;
+                id = "6";
+                checkRoom.Visibility = Visibility.Visible;
+                text8.Visibility = Visibility.Visible;
+                text9.Visibility = Visibility.Visible;
+                text11.Visibility = Visibility.Visible;
+                text12.Visibility = Visibility.Visible;
+                label1.Visibility = Visibility.Visible;
+                label2.Visibility = Visibility.Visible;
+                label3.Visibility = Visibility.Visible;
+                label4.Visibility = Visibility.Visible;
+                label1.Content = "Назначение";
+                label2.Content = "Тип отделки";
+                label3.Content = "Коды дверей";
+                label4.Content = "Коды окон";
+
             }
 
 
+        }
+
+        private void checkRoom_Checked(object sender, RoutedEventArgs e)
+        {
+            
+
+        }
+
+        private void checkRoom_Click(object sender, RoutedEventArgs e)
+        {
+            if (checkRoom.IsChecked == true)
+            {
+                id = "5";
+                text10.Visibility = Visibility.Visible;
+                label5.Visibility = Visibility.Visible;
+                label5.Content = "Куда можно попасть?";
+
+            }
+            if (checkRoom.IsChecked == false)
+            {
+                id = "6";
+                text10.Visibility = Visibility.Hidden;
+                label5.Visibility = Visibility.Hidden;
+
+            }
         }
     }
 }

@@ -4,34 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace kursachOOP
 {
     public class Placement : ElementBuild //список двери, переменная окно
     {
 
-        public List<Windoww> windowws = new List<Windoww>();
-        public List<Windoww> nwindow
+        private string DoorCode;
+        public string thisDoorCode
         {
-            get { return this.windowws; }
+            get { return this.DoorCode; }
+            set { this.DoorCode = value is string ? value : null; }
         }
-        public Windoww setwindow
-            {
-            set { this.windowws.Add(value); }
-            }
-        public List<Door> sDoor = new List<Door>();
-        public List<Door> doors
+        private string WindowCode;
+        public string thisWindowCode
         {
-            get { return this.sDoor; }
-
+            get { return this.WindowCode; }
+            set { this.WindowCode = value is string ? value : null; }
         }
-        public Door setdoor
+        public Placement(string number, string name, string length, string height, string width, string x, string y, string doorcode, string windowcode) : base(number, name, length, height, width, x, y)
         {
-            set { this.sDoor.Add(value); }
-        }
-
-        public Placement(string number, string name, string length, string height, string width, string x, string y) : base(number, name, length, height, width, x, y)
-        {
-            
+            this.DoorCode = doorcode;
+            this.WindowCode = windowcode;
         }
     }
 }

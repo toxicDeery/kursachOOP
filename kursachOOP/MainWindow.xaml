@@ -33,6 +33,27 @@
                     <DataGrid x:Name="Doors" HorizontalAlignment="Left" Height="482" VerticalAlignment="Top" Width="928"/>
                 </Grid>
             </TabItem>
+            <TabItem Header="Комната">
+                <Grid Margin="0,0,-1,0">
+                    <TabControl HorizontalAlignment="Left" Height="481" VerticalAlignment="Top" Width="928">
+                        <TabItem Header="Проходная">
+                            <Grid x:Name="Prohod" Background="#FFE5E5E5">
+                                <DataGrid x:Name="prohodn" HorizontalAlignment="Left" Height="453" VerticalAlignment="Top" Width="922"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="Замкнутая">
+                            <Grid Background="#FFE5E5E5">
+                                <DataGrid x:Name="entrroom" HorizontalAlignment="Left" Height="453" VerticalAlignment="Top" Width="922"/>
+                            </Grid>
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Помещение">
+                <Grid HorizontalAlignment="Left" Height="480" VerticalAlignment="Top" Width="928" Margin="0,0,-1,0">
+                    <DataGrid x:Name="Pomesh" HorizontalAlignment="Left" Height="480" VerticalAlignment="Top" Width="928"/>
+                </Grid>
+            </TabItem>
         </TabControl>
         <Button Content="Обновить" Grid.Column="1" HorizontalAlignment="Left" Margin="759,482,0,0" VerticalAlignment="Top" Width="90" Height="44" Click="Button_Click_1"/>
         <Button Content="Редактировать" Grid.Column="1" HorizontalAlignment="Left" Margin="679,130,0,0" VerticalAlignment="Top" Width="175" Height="42" Click="Button_Click_2"/>

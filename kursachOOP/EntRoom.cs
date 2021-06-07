@@ -20,7 +20,7 @@ namespace kursachOOP
                 this.NextRoom = value is string ? value : null;
             }
         }
-        public EntRoom(string number, string name, string length, string height, string width, string x, string y, string purpose, string typeoffin, string nextroom) : base(number, name, length, height, width, x, y, purpose, typeoffin)
+        public EntRoom(string number, string name, string length, string height, string width, string x, string y, string purpose, string typeoffin, string nextroom, string doorcode, string windowcode) : base(number, name, length, height, width, x, y, purpose, typeoffin, doorcode, windowcode)
         {
             this.NextRoom = nextroom;
         }

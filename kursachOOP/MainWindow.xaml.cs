@@ -23,24 +23,51 @@ namespace kursachOOP
         {
             InitializeComponent();
         }
-
+        Window1 a = new Window1();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window1 a = new Window1();
+            
             a.Show();
         }
-
-        
         private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            doorsRefresh();
+            balconRefresh();
+            windRefresh();
+            prohodRefresh();
+            entroomRefresh();
+            pomeshRefresh();
+        }
+        private void doorsRefresh()
         {
             Doors.ItemsSource = DB.doors;
             Doors.Items.Refresh();
+        }
+        private void balconRefresh()
+        {
             Balcon.ItemsSource = DB.balconies;
             Balcon.Items.Refresh();
+        }
+        private void windRefresh()
+        {
             Wind.ItemsSource = DB.windowws;
             Wind.Items.Refresh();
         }
-
+        private void prohodRefresh()
+        {
+            prohodn.ItemsSource = DB.ents;
+            prohodn.Items.Refresh();
+        }
+        private void entroomRefresh()
+        {
+            entrroom.ItemsSource = DB.cls;
+            entrroom.Items.Refresh();
+        }
+        private void pomeshRefresh()
+        {
+            Pomesh.ItemsSource = DB.place;
+            Pomesh.Items.Refresh();
+        }
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             Edit ed = new Edit();
