@@ -53,7 +53,6 @@ namespace kursachOOP
                 Placement pl = new Placement(num, Name, length, height, width, x, y, test, test1);
                 DB.place.Add(pl);
                 DelegateC newdelegate = new DelegateC();
-                
                 win.listbox1.Items.Add(newdelegate.Displayed(pl));
             }
             

@@ -26,7 +26,7 @@ namespace kursachOOP
         MainWindow window;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window1 a = new Window1(window);
+            Window1 a = new Window1(this);
             a.Show();
         }
         private void Button_Click_1(object sender, RoutedEventArgs e)

@@ -38,7 +38,7 @@ namespace kursachOOP
         public void ElementAdded()
         {
 
-            testdelegat = ("Помещение добавлено (тестирование делегатов)");
+            testdelegat = ("Помещение добавлено (демонстрация делегата)");
         }
         public string Displayed(Object obj)
         {
