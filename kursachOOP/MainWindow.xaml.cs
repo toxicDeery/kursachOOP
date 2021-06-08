@@ -10,7 +10,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 namespace kursachOOP
 {
@@ -22,11 +21,12 @@ namespace kursachOOP
         public MainWindow()
         {
             InitializeComponent();
+            
         }
-
+        MainWindow window;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window1 a = new Window1();
+            Window1 a = new Window1(window);
             a.Show();
         }
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -37,7 +37,9 @@ namespace kursachOOP
             prohodRefresh();
             entroomRefresh();
             pomeshRefresh();
+            
         }
+
         private void doorsRefresh()
         {
             Doors.ItemsSource = DB.doors;
@@ -90,6 +92,18 @@ namespace kursachOOP
         {
             Serialize serialize = new Serialize();
             serialize.load();
+        }
+
+        private void poly_Click(object sender, RoutedEventArgs e)
+        {
+            ElementBuild operation = DB.place[Pomesh.SelectedIndex];
+            listbox1.Items.Add(operation.display());
+        }
+
+        private void poly2_Click(object sender, RoutedEventArgs e)
+        {
+            ElementBuild operation = DB.doors[Doors.SelectedIndex];
+            listbox2.Items.Add(operation.display());
         }
     }
 }

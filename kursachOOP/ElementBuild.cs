@@ -92,6 +92,7 @@ namespace kursachOOP
             this.X = x;
             this.Y = y;
         }
+        public virtual string display() => $"Номер элемента {this.thisNumber}\nНазвание: {this.thisName}";
     }
  
     

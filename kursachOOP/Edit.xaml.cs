@@ -33,6 +33,7 @@ namespace kursachOOP
             label3.Visibility = Visibility.Collapsed;
             label4.Visibility = Visibility.Collapsed;
             label5.Visibility = Visibility.Collapsed;
+            
         }
         int ids = 0;
 
@@ -298,6 +299,7 @@ namespace kursachOOP
             entREdit();
             clsREdit();
             MessageBox.Show("Элемент отредактирован");
+            
         }
         private void placeEdit()
         {

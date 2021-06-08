@@ -28,5 +28,6 @@ namespace kursachOOP
             this.DoorCode = doorcode;
             this.WindowCode = windowcode;
         }
+        
     }
 }

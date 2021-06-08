@@ -55,7 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="AddClass.cs" />
+    <Compile Include="AddElemClass.cs" />
     <Compile Include="addPlace.xaml.cs">
       <DependentUpon>addPlace.xaml</DependentUpon>
     </Compile>
@@ -70,6 +70,9 @@
       <DependentUpon>Edit.xaml</DependentUpon>
     </Compile>
     <Compile Include="EntRoom.cs" />
+    <Compile Include="Poli.xaml.cs">
+      <DependentUpon>Poli.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Room.cs" />
     <Compile Include="AddElement.xaml.cs">
       <DependentUpon>AddElement.xaml</DependentUpon>
@@ -102,6 +105,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="AddElement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Poli.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
