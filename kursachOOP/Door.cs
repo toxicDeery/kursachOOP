@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace kursachOOP
 {
+    [Serializable]
     public class Door : ElementBuild // тип двери, материал 
     {
         private string TypeDoor;

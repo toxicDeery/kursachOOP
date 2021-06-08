@@ -61,6 +61,7 @@
     </Compile>
     <Compile Include="Balcony.cs" />
     <Compile Include="ClRoom.cs" />
+    <Compile Include="Delegate.cs" />
     <Compile Include="Delete.xaml.cs">
       <DependentUpon>Delete.xaml</DependentUpon>
     </Compile>
@@ -73,6 +74,7 @@
     <Compile Include="AddElement.xaml.cs">
       <DependentUpon>AddElement.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Serialize.cs" />
     <Compile Include="Windoww.cs" />
     <Page Include="addPlace.xaml">
       <SubType>Designer</SubType>
@@ -123,6 +125,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="KURS.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

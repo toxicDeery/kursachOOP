@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace kursachOOP
 {
+    [Serializable]
     public class Placement : ElementBuild //список двери, переменная окно
     {
 

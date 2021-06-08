@@ -12,7 +12,7 @@ namespace kursachOOP
         public static List<Windoww> windowws = new List<Windoww>();
         public static List<Door> doors = new List<Door>();
         public static List<Balcony> balconies = new List<Balcony>();
-        public static List<Room> rooms = new List<Room>();
+        
         public static List<EntRoom> ents = new List<EntRoom>();
         public static List<ClRoom> cls = new List<ClRoom>(); 
     }

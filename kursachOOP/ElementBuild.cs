@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace kursachOOP
 {
+    [Serializable]
     public class ElementBuild
     {
         private string number;

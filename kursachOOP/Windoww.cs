@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace kursachOOP
 {
+    [Serializable]
     public class Windoww : ElementBuild // тип окна, кол-во створок
     {
         private string Materialw;

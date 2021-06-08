@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace kursachOOP
 {
+    [Serializable]
     public class Balcony : ElementBuild
     {
         private string TypeBalc;

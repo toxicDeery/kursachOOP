@@ -79,5 +79,17 @@ namespace kursachOOP
             Delete de = new Delete();
             de.Show(); 
         }
+
+        private void save_Click(object sender, RoutedEventArgs e)
+        {
+            Serialize serialize = new Serialize();
+            serialize.save();
+        }
+
+        private void load_Click(object sender, RoutedEventArgs e)
+        {
+            Serialize serialize = new Serialize();
+            serialize.load();
+        }
     }
 }

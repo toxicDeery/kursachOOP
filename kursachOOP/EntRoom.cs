@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace kursachOOP
 {
+    [Serializable]
     public class EntRoom : Room
     {
         private string NextRoom;

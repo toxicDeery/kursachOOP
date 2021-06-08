@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="kursachOOP.ElementBuild">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAQAAAACoAAERAAAAAAABABAAQAAAAYAQ=</HashCode>
+      <FileName>ElementBuild.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kursachOOP.Door">
+    <Position X="6" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAACAAAgAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Door.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kursachOOP.ClRoom">
+    <Position X="10.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ClRoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kursachOOP.Balcony">
+    <Position X="0.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Balcony.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kursachOOP.EntRoom">
+    <Position X="14.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgIAAAAAAA=</HashCode>
+      <FileName>EntRoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kursachOOP.Placement">
+    <Position X="8.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAggAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Placement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kursachOOP.Room">
+    <Position X="12" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAABAIAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Room.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="kursachOOP.Windoww">
+    <Position X="2.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AECAAAAAAAAAAAAAAAAAAQAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Windoww.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
