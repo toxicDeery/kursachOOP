@@ -291,13 +291,23 @@ namespace kursachOOP
 
         private void Edit1_Click(object sender, RoutedEventArgs e)
         {
+            placeEdit();
+            doorEdit();
+            windowEdit();
+            balconyEdit();
+            entREdit();
+            clsREdit();
+            MessageBox.Show("Элемент отредактирован");
+        }
+        private void placeEdit()
+        {
             if (ComboEl.SelectedIndex == 0)
             {
                 for (int i = 0; i < DB.place.Count; i++)
                 {
                     if (DB.place[ids].thisNumber == ComboId.Text)
                     {
-                        DB.place[ids].thisNumber = Text1.Text; 
+                        DB.place[ids].thisNumber = Text1.Text;
                         DB.place[ids].thisName = Text2.Text;
                         DB.place[ids].thisLength = Text3.Text;
                         DB.place[ids].thisWidth = Text4.Text;
@@ -310,6 +320,9 @@ namespace kursachOOP
                     }
                 }
             }
+        }
+        private void doorEdit()
+        {
             if (ComboEl.SelectedIndex == 1)
             {
                 for (int i = 0; i < DB.doors.Count; i++)
@@ -329,6 +342,9 @@ namespace kursachOOP
                     }
                 }
             }
+        }
+        private void windowEdit()
+        {
             if (ComboEl.SelectedIndex == 2)
             {
                 for (int i = 0; i < DB.windowws.Count; i++)
@@ -348,6 +364,9 @@ namespace kursachOOP
                     }
                 }
             }
+        }
+        private void balconyEdit()
+        {
             if (ComboEl.SelectedIndex == 3)
             {
                 for (int i = 0; i < DB.balconies.Count; i++)
@@ -366,6 +385,9 @@ namespace kursachOOP
                     }
                 }
             }
+        }
+        private void entREdit()
+        {
             if (ComboEl.SelectedIndex == 4)
             {
                 for (int i = 0; i < DB.ents.Count; i++)
@@ -388,6 +410,9 @@ namespace kursachOOP
                     }
                 }
             }
+        }
+        private void clsREdit()
+        {
             if (ComboEl.SelectedIndex == 5)
             {
                 for (int i = 0; i < DB.cls.Count; i++)
@@ -411,4 +436,4 @@ namespace kursachOOP
             }
         }
     }
-}
+    }

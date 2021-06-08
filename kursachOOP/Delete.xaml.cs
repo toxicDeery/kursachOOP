@@ -32,6 +32,7 @@ namespace kursachOOP
             delBalc();
             delEntR();
             delClR();
+            MessageBox.Show("Элемент удален");
         }
         private void delplace()
         {
