@@ -15,7 +15,7 @@
             <ComboBoxItem Content="Балкон"/>
             <ComboBoxItem Content="Комната"/>
         </ComboBox>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="130" Height="49" Click="Button_Click" Visibility="Visible"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Margin="10,110,0,0" VerticalAlignment="Top" Width="130" Height="49" Click="Button_Click" Visibility="Visible"/>
         <CheckBox x:Name="checkRoom" Content="Комната проходная?" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top" Visibility="Visible" Checked="checkRoom_Checked" Click="checkRoom_Click"/>
         <Label Content="Номер элемента" HorizontalAlignment="Left" Margin="203,17,0,0" VerticalAlignment="Top"/>
         <Label Content="Имя" HorizontalAlignment="Left" Margin="271,44,0,0" VerticalAlignment="Top"/>
@@ -24,18 +24,18 @@
         <Label Content="Высота" HorizontalAlignment ="Left" Margin="255,126,0,0" VerticalAlignment="Top"/>
         <Label Content="X" HorizontalAlignment ="Left" Margin="287,153,0,0" VerticalAlignment="Top"/>
         <Label Content="Y" HorizontalAlignment ="Left" Margin="287,185,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="Text1" HorizontalAlignment="Left" Height="23" Margin="320,20,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="text2" HorizontalAlignment="Left" Height="23" Margin="320,45,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="text3" HorizontalAlignment="Left" Height="23" Margin="320,73,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="text4" HorizontalAlignment="Left" Height="23" Margin="320,101,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="text5" HorizontalAlignment="Left" Height="23" Margin="320,129,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="text6" HorizontalAlignment="Left" Height="23" Margin="320,157,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="text7" HorizontalAlignment="Left" Height="23" Margin="320,185,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="text8" HorizontalAlignment="Left" Height="23" Margin="320,213,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="text9" HorizontalAlignment="Left" Height="23" Margin="320,241,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="text10" HorizontalAlignment="Left" Height="23" Margin="320,325,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="text11" HorizontalAlignment="Left" Height="23" Margin="320,269,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="text12" HorizontalAlignment="Left" Height="23" Margin="320,297,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Text1" HorizontalAlignment="Left" Height="23" Margin="320,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="text2" HorizontalAlignment="Left" Height="23" Margin="320,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="text3" HorizontalAlignment="Left" Height="23" Margin="320,73,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="text4" HorizontalAlignment="Left" Height="23" Margin="320,101,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="text5" HorizontalAlignment="Left" Height="23" Margin="320,129,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="text6" HorizontalAlignment="Left" Height="23" Margin="320,157,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="text7" HorizontalAlignment="Left" Height="23" Margin="320,185,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="text8" HorizontalAlignment="Left" Height="23" Margin="320,213,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="text9" HorizontalAlignment="Left" Height="23" Margin="320,241,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="text10" HorizontalAlignment="Left" Height="23" Margin="320,325,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="text11" HorizontalAlignment="Left" Height="23" Margin="320,269,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="text12" HorizontalAlignment="Left" Height="23" Margin="320,297,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="label1" Content="Материал" HorizontalAlignment="Right" Margin="0,211,190,0" VerticalAlignment="Top"/>
         <Label x:Name="label2" Content="Материал" HorizontalAlignment="Right" Margin="0,237,190,0" VerticalAlignment="Top" RenderTransformOrigin="0.215,0.538"/>
         <Label x:Name="label3" Content="Материал" HorizontalAlignment="Right" Margin="0,266,190,0" VerticalAlignment="Top"/>

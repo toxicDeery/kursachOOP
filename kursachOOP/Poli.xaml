@@ -7,10 +7,12 @@
         mc:Ignorable="d"
         Title="Poli" Height="450" Width="800">
     <Grid>
-        <DataGrid HorizontalAlignment="Left" Height="154" Margin="10,38,0,0" VerticalAlignment="Top" Width="437"/>
-        <DataGrid HorizontalAlignment="Left" Height="169" Margin="10,212,0,0" VerticalAlignment="Top" Width="437"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="484,38,0,0" VerticalAlignment="Top" Width="98" Height="50"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="484,212,0,0" VerticalAlignment="Top" Width="98" Height="50"/>
+        <DataGrid x:Name="Doors" HorizontalAlignment="Left" Height="154" Margin="10,38,0,0" VerticalAlignment="Top" Width="437"/>
+        <DataGrid x:Name="Pomesh" HorizontalAlignment="Left" Height="154" Margin="10,212,0,0" VerticalAlignment="Top" Width="437"/>
+        <Button x:Name="poly" Content="ОК" HorizontalAlignment="Left" Margin="484,79,0,0" VerticalAlignment="Top" Width="98" Height="50" Click="poly_Click"/>
+        <Button x:Name="poly1" Content="ОК" HorizontalAlignment="Left" Margin="484,265,0,0" VerticalAlignment="Top" Width="98" Height="50" Click="poly1_Click"/>
+        <ListBox x:Name="list2" HorizontalAlignment="Left" Height="154" Margin="611,38,0,0" VerticalAlignment="Top" Width="161"/>
+        <ListBox x:Name="list1" HorizontalAlignment="Left" Height="154" Margin="611,212,0,0" VerticalAlignment="Top" Width="161"/>
 
     </Grid>
 </Window>

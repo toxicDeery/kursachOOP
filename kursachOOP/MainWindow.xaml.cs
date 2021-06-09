@@ -86,24 +86,20 @@ namespace kursachOOP
         {
             Serialize serialize = new Serialize();
             serialize.save();
+            MessageBox.Show("Элементы успешно сохранены");
         }
 
         private void load_Click(object sender, RoutedEventArgs e)
         {
             Serialize serialize = new Serialize();
             serialize.load();
+            MessageBox.Show("Элементы успешно загружены");
         }
 
-        private void poly_Click(object sender, RoutedEventArgs e)
+        private void Polym_Click(object sender, RoutedEventArgs e)
         {
-            ElementBuild operation = DB.place[Pomesh.SelectedIndex];
-            listbox1.Items.Add(operation.display());
-        }
-
-        private void poly2_Click(object sender, RoutedEventArgs e)
-        {
-            ElementBuild operation = DB.doors[Doors.SelectedIndex];
-            listbox2.Items.Add(operation.display());
+            Poli p = new Poli();
+            p.Show();
         }
     }
 }

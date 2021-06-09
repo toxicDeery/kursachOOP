@@ -169,6 +169,16 @@ namespace kursachOOP
 
         private void outE_Click(object sender, RoutedEventArgs e)
         {
+            placech();
+            doorch();
+            windch();
+            balcch();
+            entch();
+            clch();
+            MessageBox.Show("Элемент найден");
+        }
+        private void placech()
+        {
             if (ComboEl.SelectedIndex == 0)
             {
                 for (int i = 0; i < DB.place.Count; i++)
@@ -188,6 +198,9 @@ namespace kursachOOP
                     }
                 }
             }
+        }
+        private void doorch()
+        {
             if (ComboEl.SelectedIndex == 1)
             {
                 for (int i = 0; i < DB.doors.Count; i++)
@@ -207,6 +220,9 @@ namespace kursachOOP
                     }
                 }
             }
+        }
+        private void windch()
+        {
             if (ComboEl.SelectedIndex == 2)
             {
                 for (int i = 0; i < DB.windowws.Count; i++)
@@ -226,6 +242,9 @@ namespace kursachOOP
                     }
                 }
             }
+        }
+        private void balcch()
+        {
             if (ComboEl.SelectedIndex == 3)
             {
                 for (int i = 0; i < DB.balconies.Count; i++)
@@ -244,6 +263,9 @@ namespace kursachOOP
                     }
                 }
             }
+        }
+        private void entch()
+        {
             if (ComboEl.SelectedIndex == 4)
             {
                 for (int i = 0; i < DB.ents.Count; i++)
@@ -266,6 +288,9 @@ namespace kursachOOP
                     }
                 }
             }
+        }
+        private void clch()
+        {
             if (ComboEl.SelectedIndex == 5)
             {
                 for (int i = 0; i < DB.cls.Count; i++)
@@ -287,9 +312,7 @@ namespace kursachOOP
                     }
                 }
             }
-
         }
-
         private void Edit1_Click(object sender, RoutedEventArgs e)
         {
             placeEdit();

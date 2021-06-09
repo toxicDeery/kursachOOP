@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:kursachOOP"
         mc:Ignorable="d"
-        Title="MainWindow" Height="648" Width="1393">
+        Title="Элементы здания" Height="648" Width="1240">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button Content="Добавить" HorizontalAlignment="Left" Height="42" Margin="50,83,0,0" VerticalAlignment="Top" Width="174" Click="Button_Click"/>
-        <Label Content="Информация о элементах" HorizontalAlignment="Left" Margin="416,24,0,0" VerticalAlignment="Top" Height="34" Width="204" FontSize="16"/>
-        <TabControl HorizontalAlignment="Left" Margin="416,64,0,0" Width="934" Height="508" VerticalAlignment="Top">
+        <Button Content="Добавить" HorizontalAlignment="Left" Height="42" Margin="20,83,0,0" VerticalAlignment="Top" Width="174" Click="Button_Click"/>
+        <Label Content="Информация о элементах" HorizontalAlignment="Left" Margin="268,26,0,0" VerticalAlignment="Top" Height="34" Width="204" FontSize="16"/>
+        <TabControl HorizontalAlignment="Left" Margin="268,66,0,0" Width="934" Height="508" VerticalAlignment="Top">
             <TabItem x:Name="Balcony" Header="Балкон">
                 <Grid x:Name="BalconyAll" Background="#FFE5E5E5">
                     <Grid.ColumnDefinitions>
@@ -54,16 +54,14 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <Button Content="Обновить" HorizontalAlignment="Left" Margin="50,257,0,0" VerticalAlignment="Top" Width="174" Height="40" Click="Button_Click_1"/>
-        <Button Content="Редактировать" HorizontalAlignment="Left" Margin="50,139,0,0" VerticalAlignment="Top" Width="174" Height="42" Click="Button_Click_2"/>
-        <Button x:Name="del" Content="Удалить" HorizontalAlignment="Left" Margin="50,197,0,0" VerticalAlignment="Top" Width="174" Height="42" Click="del_Click"/>
-        <Button x:Name="save" Content="Сохранить" HorizontalAlignment="Left" Margin="50,540,0,0" VerticalAlignment="Top" Width="75" Height="32" Click="save_Click"/>
-        <Button x:Name="load" Content="Загрузить" HorizontalAlignment="Left" Margin="149,540,0,0" VerticalAlignment="Top" Width="75" Height="32" Click="load_Click"/>
-        <ListBox x:Name="listbox1" HorizontalAlignment="Left" Height="79" Margin="50,315,0,0" VerticalAlignment="Top" Width="174"/>
-        <Label Content="Меню" HorizontalAlignment="Left" Margin="80,20,0,0" VerticalAlignment="Top" FontSize="36"/>
-        <Button x:Name="poly" Content="Button" HorizontalAlignment="Left" Margin="254,351,0,0" VerticalAlignment="Top" Width="87" Click="poly_Click" Height="43"/>
-        <ListBox x:Name="listbox2" HorizontalAlignment="Left" Height="85" Margin="50,412,0,0" VerticalAlignment="Top" Width="174"/>
-        <Button x:Name="poly2" Content="Button" HorizontalAlignment="Left" Margin="254,456,0,0" VerticalAlignment="Top" Width="87" Height="41" Click="poly2_Click"/>
+        <Button Content="Обновить" HorizontalAlignment="Left" Margin="20,257,0,0" VerticalAlignment="Top" Width="174" Height="40" Click="Button_Click_1"/>
+        <Button Content="Редактировать" HorizontalAlignment="Left" Margin="20,139,0,0" VerticalAlignment="Top" Width="174" Height="42" Click="Button_Click_2"/>
+        <Button x:Name="del" Content="Удалить" HorizontalAlignment="Left" Margin="20,197,0,0" VerticalAlignment="Top" Width="174" Height="42" Click="del_Click"/>
+        <Button x:Name="save" Content="Сохранить" HorizontalAlignment="Left" Margin="20,540,0,0" VerticalAlignment="Top" Width="75" Height="32" Click="save_Click"/>
+        <Button x:Name="load" Content="Загрузить" HorizontalAlignment="Left" Margin="119,540,0,0" VerticalAlignment="Top" Width="75" Height="32" Click="load_Click"/>
+        <ListBox x:Name="listbox1" HorizontalAlignment="Left" Height="80" Margin="20,318,0,0" VerticalAlignment="Top" Width="174"/>
+        <Label Content="Меню" HorizontalAlignment="Left" Margin="50,20,0,0" VerticalAlignment="Top" FontSize="36"/>
+        <Button x:Name="Polym" Content="Полиморфизм" HorizontalAlignment="Left" Margin="20,436,0,0" VerticalAlignment="Top" Width="174" Height="28" Click="Polym_Click"/>
 
     </Grid>
 </Window>

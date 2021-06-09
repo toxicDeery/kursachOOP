@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace kursachOOP
 {
     [Serializable]
-    public class ElementBuild
+    public abstract class ElementBuild
     {
         private string number;
         private string Name;

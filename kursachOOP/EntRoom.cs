@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace kursachOOP
 {
     [Serializable]
-    public class EntRoom : Room
+    public sealed class EntRoom : Room
     {
         private string NextRoom;
         public string thisNextRoom
